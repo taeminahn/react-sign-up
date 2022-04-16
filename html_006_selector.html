@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: red;
+        font-size: 30px;
+      }
+      .order {
+        color: green;
+      }
+      #unit {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        스타일 우선순위
+
+        1. inline 스타일 : 1000
+        2. id 선택자     : 0100
+        3. class 선택자  : 0010
+        4. tag 선택자    : 0001
+
+     -->
+    <p>test1</p>
+    <p class="order" id="unit" style="color: purple">test2</p>
+    <p id="unit">test3</p>
+    <p class="order">test4</p>
+  </body>
+</html>

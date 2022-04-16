@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <style type="text/css">
+        div {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        CSS(Cascading Style Sheet)는 웹페이지의 요소들에 단계적으로 적용할 수 있는 스타일들의 모임이다.
+
+        CSS의 구문 형식
+        selector : 스타일 적용 대상
+        property : 속성
+        value    : 값
+
+        예) selector { property: value; property: value; ... }
+
+        스타일 적용 방법
+        1. inline 스타일   : html 요소에 직접 스타일 적용
+        2. internal 스타일 : head 영역에 <style> 태그를 사용해 스타일 적용
+                            (type="text/css" 속성은 HTML5에서 생략 가능)
+        3. external 스타일 : 외부 CSS 파일을 <link> 태그를 이용해 스타일 적용
+
+        HTML1.0 ~ HTML4.0 && XHTML1.0 -> XML 기반의 엄격한 문법 사용
+                                        (여는 태그만 있는 태그 끝에 / 추가)
+
+        스타일 적용 순서
+        동일한 선택자일 경우 마지막에 지정된 스타일이 적용됨
+
+        HTML && CSS 디버깅
+        개발자 도구 > Elements에서 요소 선택 > Styles 탭 클릭
+     -->
+
+     <!-- internal 스타일 -->
+     <div>internal style</div>
+     <!-- external 스타일 -->
+     <div>external style</div>
+</body>
+</html>

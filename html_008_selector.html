@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* p요소 자손요소중에 class속성에 unit값이 설정된 요소에 스타일적용 */
+    p .unit {
+      background-color: royalblue;
+    }
+    /* p요소 속성중 class속성에 unit값이 설정된 요소에 스타일 적용 */
+    p.unit {
+      background-color: yellowgreen;
+    }
+  </style>
+  <body>
+    <p>
+      <span class="unit">p요소의 자손요소인 span요소에 설정된 class속성</span>
+    </p>
+    <p class="unit">p요소에 설정된 class속성</p>
+  </body>
+</html>

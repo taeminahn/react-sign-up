@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body h1 {
+        color: red; /* 0002 */
+      }
+      h1 {
+        color: blue; /* 0001 */
+      }
+      h1,
+      h2 {
+        color: gray; /* 각각 0001 */
+      }
+      #dv div {
+        border: 1px solid black; /* 0100 + 0001 = 0101 */
+        color: orange;
+      }
+      .point {
+        color: skyblue; /* 0010 */
+      }
+      /* !important는 우선순위 계산이 무시되고 무조건 적용된다. */
+      p {
+        color: purple !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>title</h1>
+    <div id="dv">
+      <div>
+        korea
+        <h1>title2</h1>
+      </div>
+    </div>
+
+    <p class="point">
+      우선순위는 요소들에 적용할 스타일이 중복될 때 적용되는 스타일을 계산하는
+      방법이다.
+    </p>
+    <p class="point">
+      요소들에 스타일을 적용하기 위해서는 선택자를 지정해서 설정할 수 있다.
+    </p>
+    <h2>heading2</h2>
+  </body>
+</html>

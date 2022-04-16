@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        background-color: yellow;
+      }
+
+      .gp {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        core 속성이란 여러 요소들에서 공통적으로 사용되는 속성이다.
+        단 core 속성은 html, head, meta, script, style, title 요소에서는 사용 불가능하다.
+
+        name 속성  : 요소에 이름을 지정할 때 사용되는 속성이다.
+                     클라이언트에 보내준 데이터를 서버에서 받을 때 name 속성에 지정된 값을 통해서 받는다.
+        id 속성    : 페이지에서 요소에 대한 고유한 값을 지정할 때 사용되는 속성이다.
+                     그러므로 중복된 값을 지정할 수 없다.
+        class 속성 : 여러 요소들에 공통적인 스타일을 적용시킬 때 사용되는 속성이다.
+                     즉 요소들을 그룹화할 때 사용된다.
+        style 속성 : 요소 내부에서 직접적으로 스타일을 지정할 때 사용되는 속성이다.
+        title 속성 : 요소에 대한 설명을 지정할 때 사용되는 속성이다.
+     -->
+
+    <p>item 1</p>
+    <p class="gp">item 2</p>
+    <p>item 3</p>
+    <p>item 4</p>
+    <div class="gp">box</div>
+  </body>
+</html>
