@@ -12,26 +12,57 @@
         border-width: 0;
       }
       .box1 {
+        position: static;
         width: 500px;
         height: 100px;
         background-color: black;
-        position: static;
       }
       .box2 {
+        position: relative;
         width: 500px;
         height: 200px;
         background-color: yellow;
-        position: static;
       }
       .box3 {
+        position: absolute;
         width: 100px;
         height: 100px;
         background-color: red;
-        position: absolute;
+        top: 0;
+        left: 50px;
+      }
+      .box4 {
+        position: relative;
+        top: 10px;
+        left: 150px;
+        width: 150px;
+        height: 150px;
+        background-color: green;
+      }
+      .box5 {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        position: fixed;
+        right: 10px;
+        top: 50px;
       }
     </style>
   </head>
   <body>
+    <!-- 
+    포지션(position)
+    1 포지션은 박스에 대한 배치를 변경할때 사용된다.
+    2 포지션은 값으로 static, absolute, relative, fixed가 있다.
+    3 static : 순서에 의한 기본 위치를 지정한다.
+      absolute : 부모 요소를 기준으로 위치를 지정한다.(원래의 위치값을 잃는다.)
+      relative : 자기 자신을 기준으로 위치를 지정한다. (원래의 위치값을 가지고 있다.)
+      fixed : 스크린을 기준으로 위치를 지정한다.  (원래의 위치값을 잃는다.)
+      
+    4 absolute의 위치지정
+      부모요소의   position이 static이면 기준점이 body가 된다.
+      부모요소의 position이 absolute, relative이면 기준점이 부모요소이다.
+    -->
     <div class="box1"></div>
     <div class="box2">
       <div class="box3"></div>
