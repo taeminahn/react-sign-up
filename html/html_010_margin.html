@@ -31,6 +31,29 @@
       background-color: blue;
       border-top: 10px solid gray;
       border-bottom: 10px solid gray;
+      margin-top: 10px;
+    }
+    span.sp1 {
+      background-color: aqua;
+    }
+    span.sp2 {
+      background-color: lime;
+    }
+    .cc {
+      background-color: green;
+    }
+    #m1 {
+      width: 100px;
+      height: 99px;
+      background-color: blue;
+      /* #m2의 margin값이 top에 적용되도록 하기 위해 설정한다 */
+      padding-top: 1px;
+    }
+    #m2 {
+      width: 80px;
+      height: 80px;
+      background-color: yellow;
+      margin: 10px;
     }
   </style>
   <body>
@@ -39,8 +62,9 @@
       <div class="bb">two</div>
     </div>
     <div class="inline">
-      <span class="sp1">span1</span>
-      <span class="sp2">span2</span>
+      <span class="sp1">span1 </span
+      ><!--
+      --><span class="sp2">span2</span>
     </div>
     <p class="cc">test test test test</p>
     <div id="m1">

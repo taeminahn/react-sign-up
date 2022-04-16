@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap {
+        background-color: gray;
+      }
+      div.wrap div {
+        width: 100px;
+        height: 100px;
+      }
+      .box1 {
+        background-color: red;
+        float: left;
+      }
+      .box2 {
+        background-color: green;
+        float: left;
+      }
+      .box3 {
+        background-color: blue;
+        float: left;
+      }
+      .wrap p {
+        background-color: aqua;
+        /* clear: left; */
+        float: right;
+      }
+      .other {
+        clear: both;
+      }
+      img {
+        float: left;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1">red</div>
+      <div class="box2">green</div>
+      <div class="box3">blue</div>
+      <p>inline</p>
+    </div>
+    <div class="other" style="background-color: yellow; height: 500px">
+      <img src="images/cat.jpg" width="200" height="300" alt="고양이" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam,
+        quae minus cum perspiciatis totam voluptatem eius tempore, possimus,
+        distinctio reiciendis. Asperiores alias voluptatibus doloribus iste ex
+        exercitationem mollitia fugit? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Repellendus placeat maiores blanditiis libero enim
+        dolorem deserunt voluptates laudantium amet in maxime ipsa, veritatis
+        consectetur mollitia. Reprehenderit odit voluptatibus illo asperiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum,
+        consequatur totam fuga dignissimos animi atque voluptate, iste
+        laudantium nisi unde cumque quaerat modi. Cumque, tempore eius
+        reiciendis quia saepe hic.
+      </p>
+    </div>
+  </body>
+</html>

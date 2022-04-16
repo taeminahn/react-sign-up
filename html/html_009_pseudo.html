@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p:nth-of-type(2) {
+        background-color: green;
+      }
+      p:nth-of-type(even) {
+        background-color: green;
+      }
+      p:nth-of-type(odd) {
+        background-color: green;
+      }
+      p:nth-child(3) {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        nth-of-type과 nth-child의 차이점
+        nth-child   : 모든 자식의 태그 요소에서 순서를 찾음
+        nth-of-type : 해당하는 자식 태그 요소에서 순서를 찾음
+     -->
+    <div>
+      <p>computer</p>
+      <span>test</span>
+      <p>monitor</p>
+      <p>television</p>
+      <p>desk</p>
+      <p>top</p>
+    </div>
+  </body>
+</html>
