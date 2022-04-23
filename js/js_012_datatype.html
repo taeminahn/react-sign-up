@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = 10;
+      console.log(num, typeof num);
+
+      let name = "고수";
+      console.log(name, typeof name);
+
+      let result = true;
+      console.log(result, typeof result);
+
+      let exit = null;
+      console.log(exit, typeof exit);
+
+      let arr = [10, 20, 30, "a", false];
+      console.log(arr, typeof arr);
+      console.log(arr instanceof Array);
+
+      let rect = { width: 10, height: 20 };
+      console.log(rect, typeof rect);
+      console.log(rect instanceof Object);
+
+      let add = function () {
+        return "val";
+      };
+      console.log(add, typeof add);
+      console.log(add());
+
+      function display(a, b) {
+        console.log(a, b);
+      }
+      display(3, 5);
+    </script>
+  </body>
+</html>

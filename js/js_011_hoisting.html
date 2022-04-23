@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var foo = "foo_var";
+      function foo() {
+        console.log("foo_function");
+      }
+      function bar() {
+        console.log("bar_function");
+      }
+      var bar = "bar_var";
+
+      console.log(foo, typeof foo);
+      console.log(bar, typeof bar);
+
+      var callFoo = foo;
+      var callbar = bar;
+
+      console.log(callFoo, typeof callFoo);
+      console.log(callbar, typeof callbar);
+    </script>
+  </body>
+</html>
